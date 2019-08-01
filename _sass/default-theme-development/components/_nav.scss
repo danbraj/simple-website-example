@@ -1,0 +1,19 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    display: block;
+    padding: 10px 1rem;
+    color: #444;
+    &:hover, &:focus, &:active {
+        background-color: $nav-color;
+        color: #000;
+    }
+}

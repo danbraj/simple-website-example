@@ -1,0 +1,24 @@
+@mixin lt460 {
+    @media (max-width: 459px) { @content; }
+}
+@mixin gt460 {
+    @media (min-width: 460px) { @content; }
+}
+@mixin lt600 {
+    @media (max-width: 599px) { @content; }
+}
+@mixin gt600 {
+    @media (min-width: 600px) { @content; }
+}
+@mixin gt900 {
+    @media (min-width: 900px) { @content; }
+}
+@mixin gt1200 {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin gt1500 {
+    @media (min-width: 1500px) { @content; }
+}
+@mixin gt1800 {
+    @media (min-width: 1800px) { @content; }
+}

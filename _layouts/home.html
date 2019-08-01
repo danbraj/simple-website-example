@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{{ content }}
+
+<h2>News</h2>
+<ul class="posts">
+    {% for post in site.posts %}
+    <li class="post">
+        <h3 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </li>
+    {% endfor %}
+</ul>
+<p>Subscribe via <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+
+<h2>About me</h2>
+<p>{{ site.data.info.about }}</p>
+<a href="/about">More</a>

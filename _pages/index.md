@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: home
+permalink: /
+title: Simple website example
 ---
 
 ## Jekyll

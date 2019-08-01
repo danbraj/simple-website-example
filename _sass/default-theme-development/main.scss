@@ -3,10 +3,15 @@
 @import
 
     'settings/global',
+    'settings/mixins',
     
     'misc',
 
     'generic/reset',
     'generic/elements',
+    
+    'components/nav',
+    'components/like',
+    'components/footer',
 
     'dev';

@@ -11,7 +11,7 @@ a {
     text-decoration: none;
     font-weight: 700;
 
-    &:not(.btn) {
+    &:not(.btn):not(.nav__link):not(.like__link) {
         border-bottom: 2px solid lighten($accent-color, 20%);
         outline: 0;
 

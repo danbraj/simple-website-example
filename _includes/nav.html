@@ -1,0 +1,11 @@
+{% if site.data.nav %}
+<nav>
+    <ul class="nav">
+        {% for nav in site.data.nav %}
+        <li class="nav__item">
+            <a class="nav__link" href="{{ nav.url }}">{{ nav.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}

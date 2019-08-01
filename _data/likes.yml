@@ -1,0 +1,12 @@
+- name: JavaScript
+  link: https://pl.wikipedia.org/wiki/JavaScript
+  image:
+- name: SCSS
+  link: https://sass-lang.com/
+  image:
+- name: Graphics
+  link: 
+  image: /res/storage/js.png
+- name: Coffee
+  link: https://en.wikipedia.org/wiki/Coffee
+  image:

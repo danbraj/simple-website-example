@@ -1,0 +1,33 @@
+.like {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+.like__link, .like__image {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+.like__image {
+    vertical-align: middle;
+}
+.like__link {
+    position: relative;
+    border: 1px solid #000;
+    &:hover, &:focus, &:active {
+        border-color: darken($accent-color, 10%);
+        .like__name {
+            color: darken($accent-color, 10%);
+        }
+    }
+}
+.like__name {
+    position: absolute;
+    font-size: 12px;
+    right: 2px;
+    bottom: 2px;
+    width: 90px - 6px;
+    text-align: right;
+    color: #000;
+    line-height: 1;
+}

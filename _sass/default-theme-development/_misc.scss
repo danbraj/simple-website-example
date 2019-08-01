@@ -1,4 +1,50 @@
 .wrapper {
-    width: 1200px;
-    margin: 60px auto 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    @include gt600 {
+        padding: 0 2rem;
+    }
+    @include gt1200 {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+.title {
+    background-color: $nav-color;
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+    margin: 0 -1rem;
+    @include gt600 {
+        font-size: 2.3rem;
+        margin: 0 -2rem;
+    }
+    @include gt1200 {
+        font-size: 2.8rem;
+        margin: 0 -1rem;
+        position: relative;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 1000%;
+            height: 100%;
+            z-index: 1;
+            background: $nav-color;
+            display: block;
+        }
+        &:before {
+            right: 100%;
+            display: block;
+        }
+        &:after {
+            left: 100%;
+        }
+    }
+}
+
+.likes {
+    padding: 0;
 }
