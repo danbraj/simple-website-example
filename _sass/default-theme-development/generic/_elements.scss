@@ -1,0 +1,47 @@
+html {
+    font: $prime-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+    font-weight: 700;
+
+    &:not(.btn) {
+        border-bottom: 2px solid lighten($accent-color, 20%);
+        outline: 0;
+
+        &:hover, &:focus, &:active {
+            color: darken($accent-color, 15%);
+            background-color: lighten($accent-color, 25%);
+            border-color: darken($accent-color, 15%);
+        }
+
+        &:focus, &:active {
+            border-bottom-style: dashed;
+        }
+    }
+}
+
+code {
+    font-family: monospace;
+    font-size: 0.85rem;
+
+    background: linear-gradient(60deg, $primary-color, $secondary-color);
+    padding: .15rem .3rem;
+    border-radius: .25em;
+}
+
+blockquote {
+    quotes: '\201E' '\201C';
+    &::before {
+        content: open-quote;
+    }
+    &::after {
+        content: close-quote;
+    }
+}

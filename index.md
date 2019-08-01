@@ -1,6 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+
+## Jekyll
+
+Transform your plain text into [static websites](https://jekyllrb.com/) and blogs. `web developing`
