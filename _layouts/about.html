@@ -3,10 +3,10 @@ layout: page
 ---
 {{ content }}
 
-{% if site.data.likes %}
+{% if site.data.likes.likes %}
 <h2>What I like</h2>
 <ul class="likes">
-    {% for like in site.data.likes %}
+    {% for like in site.data.likes.likes %}
     <li class="like">
         <a class="like__link" href="{{ like.link }}">
             {% if like.image %}

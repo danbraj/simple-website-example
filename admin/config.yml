@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow 
+# publish_mode: editorial_workflow 
 # /\ Adds an interface for drafting, reviewing, and approving posts
 
 media_folder: "storage/uploads"
@@ -31,7 +31,7 @@ collections:
         file: "_data/nav.yml"
         fields:
           - label: "Navigation"
-            name: "navItems"
+            name: "nav"
             widget: "list"
             fields:
               - label: Title
@@ -68,7 +68,7 @@ collections:
         file: "_data/likes.yml"
         fields:
           - label: "Likes"
-            name: "likesItems"
+            name: "likes"
             widget: "list"
             fields:
               - label: Name
@@ -80,6 +80,7 @@ collections:
               - label: Image
                 name: image
                 widget: image
+                required: false
   - label: News
     name: news
     folder: "_posts"
