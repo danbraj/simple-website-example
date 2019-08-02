@@ -17,7 +17,7 @@
     &:hover, &:focus, &:active {
         border-color: darken($accent-color, 10%);
         .like__name {
-            color: darken($accent-color, 10%);
+            text-shadow: -1px -1px 0 darken($accent-color, 10%), 1px -1px 0 darken($accent-color, 10%), -1px 1px 0 darken($accent-color, 10%), 1px 1px 0 darken($accent-color, 10%);
         }
     }
 }
@@ -28,6 +28,7 @@
     bottom: 2px;
     width: 90px - 6px;
     text-align: right;
-    color: #000;
+    color: #fff;
     line-height: 1;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

@@ -1,0 +1,20 @@
+---
+layout: page
+---
+{{ content }}
+
+{% if site.data.likes %}
+<h2>What I like</h2>
+<ul class="likes">
+    {% for like in site.data.likes %}
+    <li class="like">
+        <a class="like__link" href="{{ like.link }}">
+            {% if like.image %}
+            <img class="like__image" src="{{ like.image }}" alt="">
+            {% endif %}
+            <span class="like__name">{{ like.name }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
