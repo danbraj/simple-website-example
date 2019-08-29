@@ -16,3 +16,5 @@ jobs:
       uses: danbraj/jekyll-build-action@master
       with:
         greet: Me
+      env:
+        deploy_branch: deployment
