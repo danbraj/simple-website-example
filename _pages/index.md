@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-title: Simple website example
+title: Simple website example 2
 ---
 
 ## Jekyll
