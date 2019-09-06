@@ -15,6 +15,6 @@ jobs:
     - name: Deploy website
       uses: danbraj/jekyll-build-action@master
       with:
-        greet: Daniel
+        greet: Dan
       env:
         deploy_branch: deployment
