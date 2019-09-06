@@ -17,4 +17,4 @@ jobs:
       with:
         greet: Dan
       env:
-        deploy_branch: deployment
+        DEPLOY_BRANCH: deployment
