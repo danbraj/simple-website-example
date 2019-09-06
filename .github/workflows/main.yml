@@ -17,4 +17,5 @@ jobs:
       with:
         greet: Test
       env:
+        TOKEN: ${{ secrets.TOKEN }}
         DEPLOY_BRANCH: deployment
