@@ -20,9 +20,9 @@ jobs:
         TOKEN: ${{ secrets.TOKEN }}
         DEPLOY_BRANCH: deployment
     - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@master
-      env:
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        FTP_SERVER: ${{ secrets.FTP_HOST }}
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-        LOCAL_DIR: _site
+      uses: sebastianpopp/ftp-action@master
+      with:
+        host: ${{ secrets.FTP_HOST }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "_site"
