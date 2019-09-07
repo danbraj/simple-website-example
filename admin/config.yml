@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# publish_mode: editorial_workflow 
+# /\ Adds an interface for drafting, reviewing, and approving posts
+
+media_folder: "storage/uploads"
+# /\ Media files will be stored in the repo under storage/uploads
+
+
+collections:
+  - name: "website-settings"
+    label: "Website settings"
+    files:
+      - label: "Basic informations"
+        name: "info"
+        file: "_data/info.yml"
+        fields:
+          - label: "Author"
+            name: "name"
+            widget: "string"
+          - label: "Author's url"
+            name: "website"
+            widget: "string"
+          - label: "About me"
+            name: "about"
+            widget: "text"
+      - label: "Navigation"
+        name: "nav"
+        file: "_data/nav.yml"
+        fields:
+          - label: "Navigation"
+            name: "nav"
+            widget: "list"
+            fields:
+              - label: Title
+                name: name
+                widget: string
+              - label: Href
+                name: url
+                widget: string
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home page"
+        name: home
+        file: "_pages/index.md"
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+      - label: "About page"
+        name: about
+        file: "_pages/about.md"
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+      - label: "About page - Likes"
+        name: "likes"
+        file: "_data/likes.yml"
+        fields:
+          - label: "Likes"
+            name: "likes"
+            widget: "list"
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+                required: false
+  - label: News
+    name: news
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: post
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
